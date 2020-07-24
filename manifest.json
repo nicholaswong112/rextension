@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Re:xtension",
+    "description": "Re:place all instances of re with re:",
+    "version": "0.1",
+    "author": "dachosenwong",
+    "short_name": "Re:xtension",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": ["jquery-3.4.1.min.js", "replacer.js"],
+            "run_at": "document_idle"
+        }
+    ]
+}
